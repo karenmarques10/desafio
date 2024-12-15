@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* reset css */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+ /* variaveis */
+:root{
+    --branco: hsl(36, 100%, 99%);
+    --azul-acinzentado: hsl(233, 8%, 79%);
+    --azul-escuro: hsl(240, 100%, 5%);
+    --azul-escuro-acinzentado: hsl(236, 13%, 42%);
+    --laranja-claro: hsl(35, 77%, 62%);
+    --vermelho--claro:hsl(5, 85%, 63%);
+    --fonte: 'Inter', sans-serif;
+
+}
+
+body{
+    background-color: var(--branco);
+    font-family:var(--fonte);
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Estilizando o cabeçalho */
+.cabecalho{
+
+   margin: 90px 135px 60px 135px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.cabecalho__links{
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--azul-escuro-acinzentado);
+    font-family: var(--fonte);
+}
+ /* Estilizando a imagem com os textos */
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 10%;
+    gap: 30px;
+}
+
+.imagem__principal {
+    width: 100%;
+}
+
+.principal__conteudo {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+.principal__titulo {
+    color: var(--azul-escuro);
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.conteudo__botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.principal__texto{
+    margin:20px 10px 0px 60px;
+    width: 75%;
+    color: var(--azul-escuro-acinzentado);
+}
+
+.principal__botao {
+    text-decoration: none;
+    background-color: var(--vermelho--claro);
+    color: var(--azul-escuro);
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    margin:20px 0px 30px 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Estilizando o conteúdo lateral */
+.secundario {
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 75vh;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container__secundario{
+    padding: 10px;
+}
+
+.titulo__secundario{
+    color: var(--laranja-claro);
+    font-size: 36px;
+}
+
+.conteudo__secundario a {
+    color: var(--azul-acinzentado);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.conteudo__secundario p {
+    margin-top: 10px;
+    color: var(--azul-escuro-acinzentado);
+}
+
+.borda_1 {
+    border-bottom: 1px solid var(--azul-escuro-acinzentado);
+    padding-bottom: 30px;
+}
+
+.borda_2{
+    border-bottom: 1px solid var(--azul-escuro-acinzentado);
+    padding-bottom: 30px;
+}
+
+.conteudo__secundario{
+  margin-top: 30px;
+}
+
+/* Estilizando os cards */
+.cards {
+    display: grid;
+   grid-template-columns: 320px 320px 320px;
+   justify-content: center;
+   gap: 40px;
+}
+
+.cards img {
+    height: 20vh;
+}
+.cards__disposicao{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 60px 0px 40px -20px;
+    gap: 20px;
+}
+
+.cards__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards__conteudo h2 {
+    color: var(--vermelho--claro);
+}
+
+.cards__conteudo a {
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.cards__conteudo p {
+    color: var(--azul-escuro-acinzentado);
+}
+
+.terceiro{
+    margin-left: 35px;
+}
+
+/* Estilizando com hover */
+nav a:hover{
+    color: var(--vermelho--claro);
+}
+
+.principal__botao:hover{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+.conteudo__secundario a:hover{
+    color: var(--laranja-claro);
+}
+.cards__conteudo a:hover {
+    color: var(--vermelho--claro);
+}
